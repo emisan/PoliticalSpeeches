@@ -8,4 +8,9 @@ import com.pcand.kayaman.service.PoliticalSpeechService;
 
 @Configuration
 public class EncapsulationConfig {
+	
+	@Bean
+	public IPoliticalSpeech politicalSpeeches() {
+		return new PoliticalSpeechService();
+	}
 }
