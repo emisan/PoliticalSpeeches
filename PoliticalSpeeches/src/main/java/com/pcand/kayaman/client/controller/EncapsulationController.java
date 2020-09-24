@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pcand.kayaman.model.PoliticalSpeech;
-import com.pcand.kayaman.service.IPoliticalSpeech;
+import com.pcand.kayaman.service.IPoliticalSpeechQueries;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 public class EncapsulationController {
 
 	@Autowired
-	private IPoliticalSpeech politicalSpeech;
+	private IPoliticalSpeechQueries politicalSpeech;
 	
 	/*
 	 *  FOR INTERNAL INFO - REMOVE THIS COMMENT AND NOT USED METHODS IN PRODUCTION ENVIRONMENT

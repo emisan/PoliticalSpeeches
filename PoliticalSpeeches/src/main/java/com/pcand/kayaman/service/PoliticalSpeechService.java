@@ -23,7 +23,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
-public class PoliticalSpeechService implements IPoliticalSpeech {
+public class PoliticalSpeechService implements IPoliticalSpeechQueries {
 
 	private static final String THE_LIST_OF_POLITICAL_SPEECHES_MUST_NOT_BE_NULL = "The List of political speeches must not be null";
 

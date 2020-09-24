@@ -7,7 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 
 import com.pcand.kayaman.http.config.InternalHttpServerConfig;
 import com.pcand.kayaman.http.server.InternalResourceServer;
-import com.pcand.kayaman.service.IPoliticalSpeech;
+import com.pcand.kayaman.service.IPoliticalSpeechQueries;
 import com.pcand.kayaman.service.PoliticalSpeechService;
 
 @Configuration
@@ -21,7 +21,7 @@ public class EncapsulationConfig {
 	}
 	
 	@Bean
-	public IPoliticalSpeech politicalSpeeches() {
+	public IPoliticalSpeechQueries politicalSpeeches() {
 		return new PoliticalSpeechService();
 	}
 }
